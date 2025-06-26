@@ -63,7 +63,12 @@ const BottomNav = () => {
       >
         <MdTableBar className="inline mr-2" size={20} /> <p>Tables</p>
       </button>
-      <button className="flex items-center justify-center font-bold text-[#ababab] w-[300px]">
+      <button
+        onClick={() => navigate("/more")}
+        className={`flex items-center justify-center font-bold ${
+          isActive("/more") ? "text-[#f5f5f5] bg-[#343434]" : "text-[#ababab]"
+        } w-[300px] rounded-[20px]`}
+      >
         <CiCircleMore className="inline mr-2" size={20} /> <p>More</p>
       </button>
 
