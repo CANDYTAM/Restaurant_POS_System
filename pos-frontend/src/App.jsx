@@ -5,7 +5,7 @@ import {
   useLocation,
   Navigate,
 } from "react-router-dom";
-import { Home, Auth, Orders, Tables, Menu, Dashboard, More } from "./pages";
+import { Home, Auth, Orders, Tables, Menu, Dashboard, More, EODReports, TransactionSummaries, TransactionDetails} from "./pages";
 import Header from "./components/shared/Header";
 import { useSelector } from "react-redux";
 import useLoadData from "./hooks/useLoadData";
@@ -69,6 +69,30 @@ function Layout() {
           element={
             <ProtectedRoutes>
               <More />
+            </ProtectedRoutes>
+          }
+        />
+        <Route
+          path="/eod-reports"
+          element={
+            <ProtectedRoutes>
+              <EODReports />
+            </ProtectedRoutes>
+          }
+        />
+        <Route
+          path="/transaction-summaries"
+          element={
+            <ProtectedRoutes>
+              <TransactionSummaries />
+            </ProtectedRoutes>
+          }
+        />
+        <Route
+          path="/transaction-details"
+          element={
+            <ProtectedRoutes>
+              <TransactionDetails />
             </ProtectedRoutes>
           }
         />

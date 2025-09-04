@@ -5,3 +5,6 @@ export { default as Tables } from './Tables.jsx'
 export { default as Menu } from './Menu.jsx'
 export { default as Dashboard } from "./Dashboard.jsx"
 export { default as More } from './More.jsx'
+export { default as EODReports } from './EODReports.jsx'
+export { default as TransactionSummaries } from './TransactionSummaries.jsx'
+export { default as TransactionDetails } from './TransactionDetails.jsx'
